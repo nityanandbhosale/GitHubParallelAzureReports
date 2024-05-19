@@ -3,6 +3,12 @@ on: push
 jobs:
  Cypress-Test:
    runs-on: ubuntu-latest
+   strategy:
+    # don't fail the entire matrix on failure
+    fail-fast: false
+    matrix:
+      # run copies of the current job in parallel
+      cointainers: [1, 2, 3, 4, 5]
    steps:
      - name: Checkout GitCode
        uses: actions/checkout@v2
@@ -10,5 +16,9 @@ jobs:
      - name: Run Cypress Test
        uses: cypress-io/github-action@v4
        with:
-         command: npx cypress run
-         browser: chrome 
+          record: true
+          parallel: true
+          group: 'UI-Chrome'
+          start: npm start
+          command: npx cypress run
+          browser: chrome 
