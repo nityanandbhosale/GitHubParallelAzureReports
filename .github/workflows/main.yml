@@ -20,5 +20,5 @@ jobs:
           parallel: true
           group: 'UI-Chrome'
           start: npm start
-          command: npx cypress run
+          command: npm run RunAllTest
           browser: chrome 

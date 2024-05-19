@@ -1,0 +1,7 @@
+import '../e2e/adding.cy'
+import '../e2e/addition.cy'
+import '../e2e/amazon.cy'
+import '../e2e/checkboxes.cy'
+import '../e2e/fixture.cy'
+import '../e2e/hooks.cy'
+import '../e2e/spec.cy'
