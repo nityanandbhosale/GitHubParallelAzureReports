@@ -4,7 +4,8 @@
   "description": "// this the file for the github actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "RunAllTest": "cypress run --spec cypress/e2e/speccFileSequence.cy.js"
   },
   "author": "Nityanand Bhosale",
   "license": "ISC",
