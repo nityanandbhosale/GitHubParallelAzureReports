@@ -8,6 +8,7 @@ jobs:
     fail-fast: false
     matrix:
       # run copies of the current job in parallel
+      specs: ['./cypress/e2e/speccFileSequence.cy.js']
       cointainers: [1, 2, 3, 4, 5]
    steps:
      - name: Checkout GitCode
