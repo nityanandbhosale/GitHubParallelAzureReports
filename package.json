@@ -10,7 +10,10 @@
   "author": "Nityanand Bhosale",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.3",
+    "cypress": "^13.17.0",
     "npx": "^10.2.2"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }

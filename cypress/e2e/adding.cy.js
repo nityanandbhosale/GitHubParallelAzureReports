@@ -4,9 +4,11 @@ describe('verufy the functionality of checkbox, radio Button and Drop down', fun
 
     beforeEach(function () {
         cy.visit('https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
+       
     })
 
     it('verify the functionality for the checkbox', function () {
+      
         cy.get('input[value="option-3"]').should('be.checked')
 
     })
